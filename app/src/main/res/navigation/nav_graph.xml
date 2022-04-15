@@ -13,11 +13,23 @@
         <action
             android:id="@+id/action_FirstFragment_to_mainActivity"
             app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_FirstFragment_to_first2Fragment"
+            app:destination="@id/first2Fragment" />
     </fragment>
     <activity
         android:id="@+id/mainActivity"
         android:name="com.android.example.cartoleria.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/first2Fragment"
+        android:name="com.android.example.cartoleria.First2Fragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_first2Fragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
 
 </navigation>
