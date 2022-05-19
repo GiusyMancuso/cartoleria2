@@ -11,35 +11,25 @@
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
         <action
-            android:id="@+id/action_FirstFragment_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_FirstFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
         <action
-            android:id="@+id/action_FirstFragment_to_first2Fragment"
-            app:destination="@id/first2Fragment" />
+            android:id="@+id/action_FirstFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <activity
-        android:id="@+id/mainActivity"
-        android:name="com.android.example.cartoleria.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" >
-        <action
-            android:id="@+id/action_mainActivity_to_secondFragment"
-            app:destination="@id/secondFragment" />
-    </activity>
+        android:id="@+id/homeActivity"
+        android:name="com.android.example.cartoleria.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
     <fragment
-        android:id="@+id/first2Fragment"
-        android:name="com.android.example.cartoleria.First2Fragment"
+        android:id="@+id/loginFragment"
+        android:name="com.android.example.cartoleria.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_first2Fragment_to_mainActivity"
-            app:destination="@id/mainActivity" />
-    </fragment>
-    <fragment
-        android:id="@+id/secondFragment"
-        android:name="com.android.example.cartoleria.SecondFragment"
-        android:label="fragment_second"
-        tools:layout="@layout/fragment_second" >
+            android:id="@+id/action_loginFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
     </fragment>
 
 </navigation>

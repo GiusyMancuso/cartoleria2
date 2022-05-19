@@ -16,7 +16,7 @@
         android:textColor="@color/steel_blue"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
+        app:layout_constraintBottom_toTopOf="@id/button_registrati"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,13 +29,13 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
+        app:layout_constraintBottom_toTopOf="@id/button_registrati"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textview_first" />
 
     <Button
-        android:id="@+id/button_first"
+        android:id="@+id/button_registrati"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/registrati"
@@ -54,5 +54,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_first" />
+        app:layout_constraintTop_toBottomOf="@id/button_registrati" />
 </androidx.constraintlayout.widget.ConstraintLayout>

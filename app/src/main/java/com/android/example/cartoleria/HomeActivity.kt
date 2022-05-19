@@ -5,13 +5,13 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
     val families = listOf(Family("Pen"), Family("Pencil"), Family("Rubber"), Family("Color"))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home)
 
         val list = findViewById<RecyclerView>(R.id.family_list)
         val adapter = FamilyAdapter(families)
